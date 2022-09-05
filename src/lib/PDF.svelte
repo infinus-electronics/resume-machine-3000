@@ -3,6 +3,9 @@
 import { PDFDocument, rgb } from 'pdf-lib'
 import fontkit from '@pdf-lib/fontkit'
 
+const msg = "test"
+let pdfBytes = {}
+
 async function embedFontAndMeasureText() {
 			// Fetch custom font
       const url = 'https://pdf-lib.js.org/assets/ubuntu/Ubuntu-R.ttf'
@@ -46,7 +49,8 @@ async function embedFontAndMeasureText() {
       })
 
       // Serialize the PDFDocument to bytes (a Uint8Array)
-      const pdfBytes = await pdfDoc.save()
+      pdfBytes = await pdfDoc.save()
+      console.log(pdfBytes)
 
       // return pdfBytes
     }
@@ -56,7 +60,6 @@ async function embedFontAndMeasureText() {
 </script>
 
 {#await pdfOutput then pdfBytes}
-<object data={pdfBytes} type="application/pdf">
-    <iframe src="https://docs.google.com/viewer?url=your_url_to_pdf&embedded=true"></iframe>
-</object>
+<iframe src = {pdfBytes}></iframe>
+<p>{msg}</p>
 {/await}
