@@ -4,7 +4,7 @@ import { PDFDocument, rgb } from 'pdf-lib'
 import fontkit from '@pdf-lib/fontkit'
 
 const msg = "test"
-let pdfBytes = {}
+// let pdfBytes = {}
 
 async function embedFontAndMeasureText() {
 			// Fetch custom font
@@ -49,7 +49,9 @@ async function embedFontAndMeasureText() {
       })
 
       // Serialize the PDFDocument to bytes (a Uint8Array)
-      pdfBytes = btoa(await pdfDoc.save())
+      const pdfBytes = await pdfDoc.save()
+      const blob  = new Blob( [ pdfBytes ], { type: "application/pdf" } )
+      return URL.createObjectURL( blob )
       // pdfBytes = "test"
       console.log("Called")
       console.log(pdfBytes)
@@ -65,6 +67,5 @@ async function embedFontAndMeasureText() {
 {#await pdfOutput}
 <p>loading</p>
 {:then pdfBytes}
-<iframe src = "data:application/pdf;base64,{pdfBytes}"></iframe>
-<p>{pdfBytes}</p>
+<iframe src = "{pdfBytes}"></iframe>
 {/await}
