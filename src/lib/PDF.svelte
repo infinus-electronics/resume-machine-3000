@@ -50,17 +50,21 @@ async function embedFontAndMeasureText() {
 
       // Serialize the PDFDocument to bytes (a Uint8Array)
       pdfBytes = btoa(await pdfDoc.save())
+      // pdfBytes = "test"
+      console.log("Called")
+      console.log(pdfBytes)
       
       
     }
 
   let pdfOutput = embedFontAndMeasureText()
 
-  console.log(pdfBytes)
   
 </script>
 
-{#await pdfOutput then pdfBytes}
+{#await pdfOutput}
+<p>loading</p>
+{:then pdfBytes}
 <iframe src = "data:application/pdf;base64,{pdfBytes}"></iframe>
-<p>{msg}</p>
+<p>{pdfBytes}</p>
 {/await}
