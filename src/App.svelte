@@ -1,6 +1,7 @@
 <script lang="ts">
   import svelteLogo from './assets/svelte.svg'
   import Counter from './lib/Counter.svelte'
+  import PDF from './lib/PDF.svelte'
 </script>
 
 <main>
@@ -25,6 +26,8 @@
   <p class="read-the-docs">
     Click on the Vite and Svelte logos to learn more
   </p>
+
+  <PDF />
 </main>
 
 <style>
