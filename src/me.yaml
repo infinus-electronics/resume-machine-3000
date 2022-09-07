@@ -3,7 +3,38 @@ personal-information:
   name: "Ye Heng Hor"
   phone-uk: "+447825224575"
   phone-mas: "+601126495431"
+  addr-uk: "Peterhouse, Trumpington St., Cambridge CB2 1RD"
+  addr-mas: "2809-W, Taman Golf, 05250 Alor Setar, Kedah"
   email: "yeheng2001@gmail.com"
   website: "https://zen.infinus-electronics.net"
   github: "infinus-electronics"
   linkedin: "https://www.linkedin.com/hor-ye-heng-6a08a7143"
+
+education:
+  - "The University of Cambridge":
+    duration: "September 2021 - June 2025"
+    course: "MEng Engineering"
+    description:
+      - "Ranked 4th in cohort"
+      - "First class in first year"
+
+awards:
+  - "Jardine Scholar"
+  - "Public Service Department Malaysia Scholar"
+  - "Student of the Year 2018":
+    description:
+      - "Keat Hwa High School, Malaysia"
+
+jobs:
+  - cirrus:
+    title: "EMC Engineering Intern"
+    company: "Cirrus Logic"
+    location: "Edinburgh, United Kingdom"
+    duration: "June 2022 - September 2022"
+    description:
+    - "Developed pre-layout loop inductance optimisation flow for switching converter design using Siemens HyperLynx Advanced Solvers."
+    - "Researched and established workflow for power delivery network impedance optimisation for mixed signal applications using Siemens HyperLynx SI/PI and Keysight ADS."
+    - "Characterised switching converters and diagnosed coupled switching noise using near field EMC probes."
+    - "Reverse engineered Bluetooth Low Energy (BLE) data packets to correlate and characterize power consumption of BLE System on a Chip (SoC)"
+
+  
