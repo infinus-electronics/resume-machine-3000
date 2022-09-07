@@ -1,5 +1,6 @@
 <script lang="ts">
   import Resume from "./lib/Resume.svelte";
+
 </script>
 
 <main>

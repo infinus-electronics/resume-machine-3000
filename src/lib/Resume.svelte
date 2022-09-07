@@ -3,17 +3,17 @@
   const phone = "+447825224575";
 
   import yaml from 'js-yaml';
-  import me from "./src/me.yaml?raw";
+  import data from '/src/me.yaml?raw';
 
 
-  const data = yaml.load(fs.readFileSync('/src/me.yaml', 'utf8'));
-  console.log(data);
+  const resume = yaml.load(data);
+
 
 </script>
 
 <div>
   <div class="resume">
-    <h1>{name}</h1>
+    <h1>{resume['personal-information']['name']}</h1>
     <h2 class="noprint">{phone}</h2>
   </div>
 </div>
