@@ -17,5 +17,7 @@
     :global(.noprint) {
       display: none;
     }
+
+
   }
 </style>
