@@ -17,13 +17,12 @@
 
   .resume-container {
     width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
   }
 
   .resume {
     width: 100%;
-    margin-top: 1em;
+    margin: 1em;
 
     h1 {
       font-family: "Noto Sans";
