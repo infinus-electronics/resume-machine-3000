@@ -17,7 +17,8 @@
     :global(.noprint) {
       display: none;
     }
-
-
+  }
+  :global(*){
+    box-sizing: border-box;
   }
 </style>
