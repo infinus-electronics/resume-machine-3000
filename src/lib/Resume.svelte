@@ -15,7 +15,7 @@
     </div>
     <div class="flex">
       <p>{resume["personal-information"]["addr-uk"]}</p>
-      <div>
+      <div></div>
     </div>
     
   </div>
