@@ -11,7 +11,7 @@
     
       <div class="resume-header">
         <h1>{resume["personal-information"]["name"]}</h1>
-        <p>{resume["personal-information"]["website"]}
+        <a href="{resume["personal-information"]["website"]}">{resume["personal-information"]["website"]}</a>
       </div>
     
   </div>
@@ -26,14 +26,15 @@
     width: 70%;
     margin: auto;
     border: solid;
+    font-family: "Noto Sans";
   }
 
   .resume {
     width: 100%;
     padding: 0;
     margin: 0;
-    font-family: "Noto Sans";
     display: flex;
+    align-self: center;
     
 
     .resume-header{
@@ -43,13 +44,14 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      align-items: center;
+      
+      h1, a, p {
+        margin: 0;
+      }
       
     }
 
-    h1 {
-      font-family: "Noto Sans";
-      margin: 0;
-    }
   }
   @media print {
     .resume-container {
