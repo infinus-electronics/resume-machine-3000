@@ -30,12 +30,11 @@
   }
 
   .resume {
-    width: 100%;
+    width: auto;
     padding: 0;
     margin: 0;
     display: flex;
-    align-self: center;
-    
+   
 
     .resume-header{
       margin: $margin;
@@ -60,7 +59,7 @@
       padding: 0;
     }
     .resume {
-      margin: 0.5in;
+      margin: 0.25in;
     }
   }
 </style>
