@@ -9,12 +9,14 @@
 <div class="resume-container">
   <div class="resume">
     
-      <div class="header">
-        <h1>{resume["personal-information"]["name"]}</h1>
-        <a href="{resume["personal-information"]["website"]}">{resume["personal-information"]["website"]}</a>
-      </div>
-      <div class="contacts">
-      </div>
+    <div class="flex">
+      <h1>{resume["personal-information"]["name"]}</h1>
+      <a href="{resume["personal-information"]["website"]}">{resume["personal-information"]["website"]}</a>
+    </div>
+    <div class="flex">
+      <p>{resume["personal-information"]["addr-uk"]}</p>
+      <div>
+    </div>
     
   </div>
 </div>
@@ -31,19 +33,19 @@
     font-family: "Noto Sans";
     h1, a, p {
       margin: 0;
-    }
-      
+    }      
   }
 
   .resume {
     width: auto;
     padding: 0;
-    margin: 0;
+    margin: $margin;
     display: flex;
+    flex-direction: column;
  
 
-    .header{
-      margin: $margin;
+    .flex{
+      margin-top: 0.5em;
       padding: 0;
       width: auto;
       display: flex;
