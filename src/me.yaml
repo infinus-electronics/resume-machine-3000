@@ -35,6 +35,6 @@ jobs:
     - "Developed pre-layout loop inductance optimisation flow for switching converter design using Siemens HyperLynx Advanced Solvers."
     - "Researched and established workflow for power delivery network impedance optimisation for mixed signal applications using Siemens HyperLynx SI/PI and Keysight ADS."
     - "Characterised switching converters and diagnosed coupled switching noise using near field EMC probes."
-    - "Reverse engineered Bluetooth Low Energy (BLE) data packets to correlate and characterize power consumption of BLE System on a Chip (SoC)"
+    - "Wrote custom Wireshark dissector to reverse engineer Bluetooth Low Energy (BLE) data packets to correlate and characterize power consumption of BLE System on a Chip (SoC)"
 
   
