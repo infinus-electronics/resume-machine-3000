@@ -11,12 +11,12 @@ personal-information:
   linkedin: "https://www.linkedin.com/in/hor-ye-heng-6a08a7143/"
 
 education:
-  - "The University of Cambridge":
+  - cambridge:
+    name: "The University of Cambridge"
     duration: "September 2021 - June 2025"
     course: "MEng Engineering"
-    description:
-      - "Ranked 4th in cohort"
-      - "First class in first year"
+    description: "Ranked 4th in cohort, first class in first year"
+
 
 awards:
   - "Jardine Scholar"

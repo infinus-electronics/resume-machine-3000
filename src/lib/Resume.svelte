@@ -2,6 +2,7 @@
   import yaml from "js-yaml";
   import data from "/src/me.yaml?raw";
   import SocialMediaIcons from "./SocialMediaIcons.svelte";
+  import EducationSection from "./EducationSection.svelte";
   
   const resume = yaml.load(data);
   console.log(resume);
@@ -16,8 +17,10 @@
     </div>
     <div class="flex">
       <p>{resume["personal-information"]["addr-uk"]}</p>
-      <SocialMediaIcons />
-      
+      <SocialMediaIcons />      
+    </div>
+    <div>
+      <EducationSection />
     </div>
  
       
@@ -27,15 +30,16 @@
 </div>
 
 <style lang="scss">
-  @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100...900");
 
   $margin: 1em;
 
   .resume-container {
     width: 70%;
     margin: auto;
-    border: solid;
-    font-family: "Noto Sans";
+    // border: solid;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
     h1, a, p {
       margin: 0;
     }      
@@ -47,10 +51,20 @@
     margin: $margin;
     display: flex;
     flex-direction: column;
+
+    h1 {
+      font-weight: 500;
+    }
+
+    p {
+      font-weight: 300;
+    }
+
+    
  
 
     .flex{
-      margin-top: 0.5em;
+      margin-bottom: 0.25em;
       padding: 0;
       width: auto;
       display: flex;
