@@ -1,7 +1,8 @@
 <script lang="ts">
   import yaml from "js-yaml";
   import data from "/src/me.yaml?raw";
-
+  import SocialMediaIcons from "./SocialMediaIcons.svelte";
+  
   const resume = yaml.load(data);
   console.log(resume);
 </script>
@@ -15,8 +16,12 @@
     </div>
     <div class="flex">
       <p>{resume["personal-information"]["addr-uk"]}</p>
-      <div></div>
+      <SocialMediaIcons />
+      
     </div>
+ 
+      
+
     
   </div>
 </div>
