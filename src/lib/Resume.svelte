@@ -4,21 +4,23 @@
   import SocialMediaIcons from "./SocialMediaIcons.svelte";
   import EducationSection from "./EducationSection.svelte";
   import AwardsSection from "./AwardsSection.svelte";
-  
+  import JobsSection from "./JobsSection.svelte";
+
   const resume = yaml.load(data);
   console.log(resume);
 </script>
 
 <div class="resume-container">
   <div class="resume">
-    
     <div class="flex">
       <h1>{resume["personal-information"]["name"]}</h1>
-      <a href="{resume["personal-information"]["website"]}">{resume["personal-information"]["website"]}</a>
+      <a href={resume["personal-information"]["website"]}
+        >{resume["personal-information"]["website"]}</a
+      >
     </div>
     <div class="flex">
       <p>{resume["personal-information"]["addr-uk"]}</p>
-      <SocialMediaIcons />      
+      <SocialMediaIcons />
     </div>
     <div>
       <EducationSection />
@@ -26,10 +28,9 @@
     <div>
       <AwardsSection />
     </div>
- 
-      
-
-    
+    <div>
+      <JobsSection />
+    </div>
   </div>
 </div>
 
@@ -44,9 +45,11 @@
     // border: solid;
     font-family: "Noto Sans", sans-serif;
     font-size: 16px;
-    h1, a, p {
+    h1,
+    a,
+    p {
       margin: 0;
-    }      
+    }
   }
 
   .resume {
@@ -64,10 +67,7 @@
       font-weight: 300;
     }
 
-    
- 
-
-    .flex{
+    .flex {
       margin-bottom: 0.25em;
       padding: 0;
       width: auto;
@@ -76,9 +76,8 @@
       flex-grow: 1000;
       flex-wrap: wrap;
       justify-content: space-between;
-      align-items: center;      
+      align-items: center;
     }
-
   }
   @media print {
     .resume-container {

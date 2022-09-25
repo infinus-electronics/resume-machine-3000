@@ -5,20 +5,24 @@
   import data from "/src/me.yaml?raw";
 
   const resume = yaml.load(data);
-  let edus = resume["education"];
+  let jobs = resume["jobs"];
 </script>
 
 <div class="container">
-  <SectionTitle text="Education" uc />
-  {#each edus as edu}
+  <SectionTitle text="Work Experience" uc />
+
+  {#each jobs as job}
     <div class="item">
       <div class="flex">
-        <h3>{edu["name"]}</h3>
-        <date>{edu["duration"]}</date>
+        <h3>{job.title}</h3>
+        <date>{job.duration}</date>
       </div>
-      <div>
-        <p>{edu["course"]} | {edu["description"]}</p>
-      </div>
+      <p>{job.company}, {job.location}</p>
+      <ul>
+        {#each job.description as description}
+          <li>{description}</li>
+        {/each}
+      </ul>
     </div>
   {/each}
 </div>
@@ -27,9 +31,16 @@
   div.container {
     margin-top: 0.75em;
   }
+
   div.item {
     margin: 0.5em 0;
+
   }
+
+  // span.location{
+  //   font-weight: 300;
+  // }
+
   div.flex {
     display: flex;
     margin: 0;
@@ -46,7 +57,6 @@
       margin: 0;
     }
   }
-
   date {
     font-weight: 350;
   }
@@ -54,9 +64,15 @@
   h3 {
     font-size: medium;
     font-weight: 600;
+    margin: 0;
   }
 
-  p {
+  ul {
+    margin: 0.25em 0;
+  }
+
+  p,
+  li{
     margin: 0;
     width: fit-content;
     // font-weight: 300;
