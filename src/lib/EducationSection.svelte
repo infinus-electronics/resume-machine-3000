@@ -1,6 +1,6 @@
 <script>
-
   import SectionTitle from "./SectionTitle.svelte";
+
 
   import yaml from "js-yaml";
   import data from "/src/me.yaml?raw";
@@ -13,11 +13,11 @@
   <SectionTitle text="Education" uc />
   {#each edus as edu}
     <div class="flex">
-        <h3>{edu["name"]}</h3>
-        <date>{edu["duration"]}</date>
+      <h3>{edu["name"]}</h3>
+      <date>{edu["duration"]}</date>
     </div>
     <div>
-        <p>{edu["course"]} | {edu["description"]}</p>
+      <p>{edu["course"]} | {edu["description"]}</p>
     </div>
   {/each}
 </div>
@@ -26,7 +26,7 @@
   div.container {
     margin-top: 0.75em;
   }
-  div.flex{
+  div.flex {
     display: flex;
     margin: 0;
     margin-top: 0.25em;
@@ -36,25 +36,27 @@
     flex-wrap: wrap;
     width: 100%;
 
-    h3, date {
-        display: flex;
-        margin: 0;
+    h3,
+    date {
+      display: flex;
+      margin: 0;
     }
   }
-  h3 {
- 
-    font-size: medium;    
-    font-weight: 600;
 
-  }
   date {
     font-weight: 350;
   }
 
-  p{    
+  h3 {
+    font-size: medium;
+    font-weight: 600;
+  }
+
+  p {
     margin: 0;
     width: fit-content;
+    // font-weight: 300;
     font-size: 14px;
   }
- 
+  
 </style>

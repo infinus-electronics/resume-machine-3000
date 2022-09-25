@@ -3,6 +3,7 @@
   import data from "/src/me.yaml?raw";
   import SocialMediaIcons from "./SocialMediaIcons.svelte";
   import EducationSection from "./EducationSection.svelte";
+  import AwardsSection from "./AwardsSection.svelte";
   
   const resume = yaml.load(data);
   console.log(resume);
@@ -22,6 +23,9 @@
     <div>
       <EducationSection />
     </div>
+    <div>
+      <AwardsSection />
+    </div>
  
       
 
@@ -30,7 +34,7 @@
 </div>
 
 <style lang="scss">
-  @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100...900");
+  // @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100...900");
 
   $margin: 1em;
 
