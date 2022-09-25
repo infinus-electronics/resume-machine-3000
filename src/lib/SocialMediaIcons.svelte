@@ -22,4 +22,9 @@
         margin-left: 2px;
         padding: 1px;
     }
+    // div {
+    //     display: flex;
+    //     flex-grow: 1000;
+    //     // justify-content: flex-start;
+    // }
 </style>

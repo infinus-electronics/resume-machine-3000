@@ -49,11 +49,13 @@
 
   date {
     font-weight: 350;
+    
   }
 
   h3 {
     font-size: medium;
     font-weight: 600;
+    margin-right: 1em !important;
   }
 
   p {

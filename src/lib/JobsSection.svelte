@@ -65,6 +65,7 @@
     font-size: medium;
     font-weight: 600;
     margin: 0;
+    margin-right: 1em !important;
   }
 
   ul {

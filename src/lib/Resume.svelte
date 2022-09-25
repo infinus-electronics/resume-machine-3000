@@ -61,6 +61,7 @@
 
     h1 {
       font-weight: 500;
+      margin-right: 1em;
     }
 
     p {
