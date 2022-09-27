@@ -5,6 +5,8 @@
   import EducationSection from "./EducationSection.svelte";
   import AwardsSection from "./AwardsSection.svelte";
   import JobsSection from "./JobsSection.svelte";
+  import PersonalProjectsSection from "./PersonalProjectsSection.svelte";
+  import SkillsSection from "./SkillsSection.svelte";
 
   const resume = yaml.load(data);
   console.log(resume);
@@ -31,11 +33,19 @@
     <div>
       <JobsSection />
     </div>
+    <div>
+      <PersonalProjectsSection />
+    </div>
+    <div>
+      <SkillsSection />
+    </div>
   </div>
 </div>
 
 <style lang="scss">
   // @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100...900");
+
+  
 
   $margin: 1em;
 

@@ -47,5 +47,52 @@ jobs:
     - "Configured professional audio equipment including digital mixing console and speaker arrays."
     -	"Designed and built measurement microphones, calibrated hall acoustics, made cable testers."
 
+personal-projects:
+  - stm32:
+    title: "STM32 Based MIDI Controller"
+    duration: "completed July 2021"
+    description:
+    - "Used direct register manipulation to configure ADC, DMA, I2C, hardware timers and GPIO."
+    - "Achieved efficient and reliable LED matrix multiplexing, key matrix and rotary encoder polling, multi-channel bit-banged bit angle modulation and non-blocking read/write operations to external peripherals like I/O expanders, a character LCD and EEPROM."
+    - "Designed and 3D printed enclosure and parts."
 
+  - patch-antenna:
+    title: "Amateur Rocket Telemetry Antenna"
+    duration: "completed November 2021"
+    description:
+    - "Developed web-based calculator to facilitate rapid prototyping and iteration of a curved patch antenna for amateur rocket telemetry and video live streaming purposes."
+    - "Validated and optimised antenna performance by doing electromagnetic simulations with Altair Feko."
+    - "Fabricated and characterised antennas with vector network analyser measurements."
+
+  - dummy-load:
+    title: "Multi-function Constant Current Dummy Load"
+    duration: "completed August 2021"
+    description:
+    - "Used LTSpice to find optimal component values for a compensation network to eliminate oscillations."
+    - "Implemented a pulsed current mode to enable the measurement of saturation current of various inductors to aid in switched-mode power supply design."
+    - "Used ADC oversampling and decimation on the tinyAVR’s internal ADC to achieve high-resolution current readout; combined with an external 12-bit DAC for high precision load current programming."
+
+  - opamp-boost:
+    title: "Opamp Based Boost Converter"
+    duration: "ongoing"
+    description:
+    - "Designed and built a fully functional boost converter using only operational amplifiers."
+    - "Currently working on improving loop stability with compensation networks, and increasing power handling capability with better inductor design." 
+
+skills:
+- programming:
+  title: "Programming"
+  description: "Embedded C/C++, Python, Verilog, JavaScript"
+
+- cloud:
+  title: "Cloud Computing"
+  description: "Familiar with AWS and Oracle Cloud Infrastructure"
+
+- electronics:
+  title: "Electronics Design and Prototyping"
+  description: "Analogue and digital circuit design, PCB design, SMD soldering"
+
+- language:
+  title: "Language Proficiency"
+  description: "Chinese (native), Malay (fluent), English (fluent)"
   

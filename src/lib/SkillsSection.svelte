@@ -5,32 +5,45 @@
   import data from "/src/me.yaml?raw";
 
   const resume = yaml.load(data);
-  let edus = resume["education"];
+  let skills = resume["skills"];
 </script>
 
 <div class="container">
-  <SectionTitle text="Education" uc />
-  {#each edus as edu}
-    <div class="item">
-      <div class="flex">
-        <h3>{edu["name"]}</h3>
-        <date>{edu["duration"]}</date>
+  <SectionTitle text="Skills" uc />
+
+  <div class="item">
+  <!-- <ul> -->
+    {#each skills as skill}
+      <!-- <li> -->
+        <div class="item">
+        <h3>{skill.title}</h3>
+        <p>{skill.description}</p>
       </div>
-      <div>
-        <p>{edu["course"]} | {edu["description"]}</p>
-      </div>
-    </div>
-  {/each}
+      <!-- </li> -->
+    {/each}
+  <!-- </ul> -->
+</div>
 </div>
 
 <style lang="scss">
   div.container {
     margin-top: 0.75em;
+    box-sizing: border-box;
+    position: relative;
+    white-space: normal;
   }
+
   div.item {
     margin: 0.5em 0;
     page-break-inside: avoid;
+    box-sizing: border-box;
+    white-space: normal;
   }
+
+  // span.location{
+  //   font-weight: 300;
+  // }
+
   div.flex {
     display: flex;
     margin: 0;
@@ -47,19 +60,24 @@
       margin: 0;
     }
   }
-
   date {
     font-weight: 350;
-    
   }
 
   h3 {
     font-size: medium;
     font-weight: 600;
+    margin: 0;
     margin-right: 1em !important;
   }
 
-  p {
+  ul {
+    margin: 0.25em 0;
+    // margin-top: 0.1em;
+  }
+
+  p,
+  li {
     margin: 0;
     width: fit-content;
     // font-weight: 300;

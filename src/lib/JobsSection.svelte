@@ -34,6 +34,7 @@
 
   div.item {
     margin: 0.5em 0;
+    page-break-inside: avoid;
 
   }
 
