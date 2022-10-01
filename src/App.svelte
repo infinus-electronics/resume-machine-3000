@@ -19,14 +19,15 @@
   @media print {
     @page {
       size: A4;
-      margin: 0;
+      /* margin: 0; */
+      margin: 1cm;
     }
 
     :global(.noprint) {
       display: none;
     }
   }
-  :global(*) {
+  /* :global(*) {
     box-sizing: border-box;
-  }
+  } */
 </style>

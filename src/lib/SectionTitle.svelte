@@ -11,11 +11,12 @@
 
 <style lang="scss">
     h2 {
-        margin-top: 0;
+        margin: 0;
         margin-bottom: 00.25em;
         font-weight: 700;
         font-size: 18px;
         width: 100%;
+        display: inline-block;
 
         
         border-bottom: solid;

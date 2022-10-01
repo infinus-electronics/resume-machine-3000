@@ -66,8 +66,8 @@
     width: auto;
     padding: 0;
     margin: $margin;
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
 
     h1 {
       font-weight: 500;
@@ -97,7 +97,7 @@
       padding: 0;
     }
     .resume {
-      margin: 0.25in;
+      box-sizing: border-box;
     }
   }
 </style>

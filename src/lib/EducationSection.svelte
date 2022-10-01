@@ -26,15 +26,20 @@
 <style lang="scss">
   div.container {
     margin-top: 0.75em;
+    width: 100%;
   }
   div.item {
-    margin: 0.5em 0;
-    page-break-inside: avoid;
+    break-inside: avoid;
+    box-sizing: border-box;
+    white-space: normal;
+    display: inline-block; 
+    width: 100%;
+    margin-top: 00.25em;
   }
   div.flex {
     display: flex;
     margin: 0;
-    margin-top: 0.25em;
+    // margin-top: 0.25em;
     flex-direction: row;
     justify-content: space-between;
     flex-grow: 1000;

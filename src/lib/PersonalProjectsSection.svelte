@@ -30,14 +30,21 @@
   div.container {
     margin-top: 0.75em;
     box-sizing: border-box;
-    white-space: normal;
+    // white-space: normal;
+    // display: inline-block;
+    width: 100%;
+    // break-inside: avoid;
   }
 
   div.item {
-    margin: 0.5em 0;
+    // margin: 0.5em 0;
     break-inside: avoid;
     box-sizing: border-box;
     white-space: normal;
+    width: 100%;
+    display: inline-block; 
+    margin-top: 00.25em;
+    // BRUH
 
   }
 
@@ -48,7 +55,7 @@
   div.flex {
     display: flex;
     margin: 0;
-    margin-top: 0.25em;
+    // margin-top: 0.25em;
     flex-direction: row;
     justify-content: space-between;
     flex-grow: 1000;
@@ -73,7 +80,9 @@
   }
 
   ul {
-    margin: 0.25em 0;
+    margin: 0;
+    margin-top: 00.25em;
+    break-inside: avoid;
     // margin-top: 0.1em;
   }
 
